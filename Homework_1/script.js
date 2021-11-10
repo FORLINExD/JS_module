@@ -55,12 +55,8 @@ let middleName = "Volodymyrovych";
 let lastName = "Melnyk";
 console.log(firstName, middleName, lastName)
 
-let person = {
-    firstName: 'Vladyslav',
-    middleName: 'Volodymyrovych',
-    lastName: 'Melnyk',
-}
-console.log(person["firstName"])
+let person = `${firstName} ${middleName} ${lastName}`;
+console.log(person)
 
 
 
