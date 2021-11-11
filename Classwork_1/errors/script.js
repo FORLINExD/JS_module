@@ -21,12 +21,12 @@ let a = 100;
 let b = 500;
 let c = "hello";
 let d = "okten";
-const x = 'constant value';
+const x = 22;
 {
     console.log(a, b, c, d, x);
-    a = 'new value';
+    a = 65;
 }
-let y = ' new value';
+let y = 123;
 
 let result = 100 + y;
 
