@@ -24,7 +24,6 @@ let d = "okten";
 const x = 22;
 {
     console.log(a, b, c, d, x);
-    a = 65;
 }
 let y = 123;
 
