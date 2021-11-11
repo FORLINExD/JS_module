@@ -22,9 +22,9 @@ let b = 500;
 let c = "hello";
 let d = "okten";
 const x = 22;
-
-console.log(a, b, c, d, x);
-
+{
+    console.log(a, b, c, d, x);
+}
 let y = 123;
 
 let result = 100 + y;

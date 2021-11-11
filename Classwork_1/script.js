@@ -35,15 +35,14 @@ console.log(result)
 
 // 4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
 
-let books = [
-    book1 = {
+let book = [
+    {
     name: "Harry Potter and the Philosopher's Stone",
     pages: 352,
     genre: "Adventure, Fantasy",
     author: "J. K. Rowling"
     },
-
-    book2 = {
+    {
     name: "The Art of War",
     pages: 152,
     genre: "Military art, History",
@@ -51,8 +50,8 @@ let books = [
 }
 ]
 
-console.log(books[0]);
-console.log(books[1]);
+console.log(book[0], book[1]);
+
 
 
 
@@ -76,7 +75,7 @@ console.log(s)
 let heightC = 10;
 let dC = 4;
 let pi = 3.14;
-let v = pi*dC**2*heightC;
+let v = pi*(dC/2)**2*heightC;
 console.log(v)
 
 
