@@ -1,0 +1,74 @@
+
+
+/*******************************   2.1   2.2 **********************************/
+
+
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: url("simpsons_house.jpg") no-repeat center top/cover ;
+}
+
+.character__block, .character__block_2 {
+    margin: 10px 0;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    line-height: 30px;
+    font-family: Arial, sans-serif;
+    color: white;
+    column-gap: 30px;
+    background: rgba(0, 0, 0, 0.68);
+    border: 3px solid #ffce00;
+    border-radius: 20px;
+    transition: .3s;
+
+}
+
+.character__block:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+.character__block img, .character__block_2 img {
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 10px;
+}
+
+.character__block_2 {
+    flex-direction: column;
+    align-items: start;
+}
+
+
+/*****************************************************************/
+
+
+/******************************   3.1   ***********************************/
+
+/*.product__main {*/
+/*    max-width: fit-content;*/
+/*    background: #f4e67e;*/
+/*    display: flex;*/
+/*    padding: 20px;*/
+/*    border: 3px solid;*/
+/*}*/
+
+/*.product__card {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    line-height: 30px;*/
+/*}*/
+
+/*.product__card img {*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+
+/*.product__title {*/
+/*    text-align: center;*/
+/*    font-family: Arial, sans-serif;*/
+/*}*/
+
