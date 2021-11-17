@@ -4,10 +4,10 @@
 //     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
 //     d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
 
-let arr = [];
-
-for (let i = 1; i <= arr.length; i++) {
-    if (arr.length <= 50 && arr[i] % 2 === 0)
-        console.log(arr[i])
-
-}
+// let arr = [];
+//
+// for (let i = 1; i <= arr.length; i++) {
+//     if (arr.length <= 50 && arr[i] % 2 === 0)
+//         console.log(arr[i])
+//
+// }
