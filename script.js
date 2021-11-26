@@ -50,22 +50,22 @@
 //     }
 // }
 //
-// let usersArr2 = [
-//     new Client(77, 'Luis', 'Bowman', 'luis_bow321@gmail.com', '+1 501-871-0178', ['headphones', 'toilet paper']),
-//     new Client(1, 'Sullivan', 'Gomez', 'gomezsul@gmail.com', '+1 505-578-2560', ['iphone 11']),
-//     new Client(32, 'Danna', 'Gibson', 'gomezsul@gmail.com', '+1 212-855-3813', ['Hankey Bannister', 'Jim Beam White', 'scotch', 'beer', 'apple']),
-//     new Client(56, 'Calvin', 'Dixon', 'calvindix64@gmail.com', '+1 209-604-3088', ['Hoodie Lacoste', 'snickers Lacoste Game advance', 'jeans', 'black scarf']),
-//     new Client(10, 'Andrew', 'Gardner', 'andrew_gard@gmail.com', '+1 582-465-1580', ['Skechers', 'Puma X-Ray', 'cap']),
-//     new Client(5, 'Nick', 'Lynch', 'nicklynch185@gmail.com', '+1 212-398-3983', ['Asus webcam c3', 'red wine', 'bulb']),
-//     new Client(43, 'Jair', 'Stokes', 'jair_s321@gmail.com', '+1 214-865-4424', ['keyboard HATOR Rockfall EVO', 'mouse zowie ec-2']),
-//     new Client(25, 'Cedric', 'Newton', 'cedric_newton@gmail.com', '+1 582-400-2813', ['chair DXRACER MASTER']),
-//     new Client(81, 'Camden', 'Cardenas', 'camden_cam67@gmail.com', '+1 202-801-8471', ['razor philips OneBlade', 'foam for shaving Gillette series sensitive skin', 'extra razors']),
-//     new Client(6, 'Payton', 'Bradford', 'p_bradford69@gmail.com', '+1 582-300-1862', ['notebook MacBook Pro 16" M1', 'adapter Ugreen AV161']),
-// ]
-// console.log(usersArr2)
+let clientsArr = [
+    new Client(77, 'Luis', 'Bowman', 'luis_bow321@gmail.com', '+1 501-871-0178', ['headphones', 'toilet paper']),
+    new Client(1, 'Sullivan', 'Gomez', 'gomezsul@gmail.com', '+1 505-578-2560', ['iphone 11']),
+    new Client(32, 'Danna', 'Gibson', 'gomezsul@gmail.com', '+1 212-855-3813', ['Hankey Bannister', 'Jim Beam White', 'scotch', 'beer', 'apple']),
+    new Client(56, 'Calvin', 'Dixon', 'calvindix64@gmail.com', '+1 209-604-3088', ['Hoodie Lacoste', 'snickers Lacoste Game advance', 'jeans', 'black scarf']),
+    new Client(10, 'Andrew', 'Gardner', 'andrew_gard@gmail.com', '+1 582-465-1580', ['Skechers', 'Puma X-Ray', 'cap']),
+    new Client(5, 'Nick', 'Lynch', 'nicklynch185@gmail.com', '+1 212-398-3983', ['Asus webcam c3', 'red wine', 'bulb']),
+    new Client(43, 'Jair', 'Stokes', 'jair_s321@gmail.com', '+1 214-865-4424', ['keyboard HATOR Rockfall EVO', 'mouse zowie ec-2']),
+    new Client(25, 'Cedric', 'Newton', 'cedric_newton@gmail.com', '+1 582-400-2813', ['chair DXRACER MASTER']),
+    new Client(81, 'Camden', 'Cardenas', 'camden_cam67@gmail.com', '+1 202-801-8471', ['razor philips OneBlade', 'foam for shaving Gillette series sensitive skin', 'extra razors']),
+    new Client(6, 'Payton', 'Bradford', 'p_bradford69@gmail.com', '+1 582-300-1862', ['notebook MacBook Pro 16" M1', 'adapter Ugreen AV161']),
+]
+console.log(clientsArr)
 
 
 // 5 - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
-//
-// let userOrderSort = (userArr) => userArr.sort((a, b) => a.order.length - b.order.length);
-// console.log(userOrderSort(usersArr2))
+
+let clientOrderSort = (clientArr) => clientArr.sort((a, b) => a.order.length - b.order.length);
+console.log(clientOrderSort(clientsArr))
