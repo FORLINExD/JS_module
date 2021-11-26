@@ -4,11 +4,7 @@
 //     someeMAIL@gmail.com
 //     someeMAIL@i.ua
 //     some.email@gmail.com
-let test = 'someemail@gmail.com'
-let validatorFunc = (str) => {
-    return str.split('@')
-}
-console.log(validatorFunc(test))
+
 
 
 // 2 - є масив... відсортувати його в спадаючому порядку за кількістю елементів в полі modules
