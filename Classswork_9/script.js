@@ -69,143 +69,143 @@
 // //  Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // //  Приклад структири знаходиться у файлі example.png
 //
-let coursesArray = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'java core',
-            'java advanced']
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'python core',
-            'python advanced']
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'node.js',
-            'python',
-            'java']
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-    }
-];
-
-let mainContainer = document.body.appendChild(document.createElement('div'));
-mainContainer.classList.add('main__container');
-mainContainer.style.maxWidth = '1800px';
-mainContainer.style.margin = '0 auto';
-mainContainer.style.borderRadius = '15px'
-mainContainer.style.rowGap = '10px';
-mainContainer.style.fontFamily = 'Arial';
-mainContainer.style.backgroundColor = '#9d92f7'
-mainContainer.style.boxShadow = '5px 5px 10px #333333';
-mainContainer.style.color = '#ffffff';
-for (const element of coursesArray) {
-
-    let divInner = document.createElement('div');
-    divInner.style.padding = '5px';
-
-    let h1Title = document.createElement('h1');
-    h1Title.innerText = element.title;
-    h1Title.style.textAlign = 'center';
-    h1Title.style.backgroundColor = '#544ab6';
-    h1Title.style.borderRadius = '10px';
-
-    let monthHourBlock = document.createElement('div');
-    monthHourBlock.classList.add('month__hour_block');
-    monthHourBlock.style.display = 'flex';
-    monthHourBlock.style.columnGap = '5px';
-    monthHourBlock.style.backgroundColor = '#544ab6';
-    monthHourBlock.style.borderRadius = '10px';
-
-    let h2MonthDur = document.createElement('h2');
-    h2MonthDur.innerText = `Month duration: ${element.monthDuration}`;
-    h2MonthDur.style.textAlign = 'center';
-    h2MonthDur.style.flexBasis = '50%';
-
-    let h2HourDur = document.createElement('h2');
-    h2HourDur.innerText = `Hours duration: ${element.hourDuration}`;
-    h2HourDur.style.textAlign = 'center';
-    h2HourDur.style.flexBasis = '50%';
-
-    let modulesContainer = document.createElement('div');
-    modulesContainer.classList.add('modules__container');
-
-    let ulModules = document.createElement('ul');
-    ulModules.classList.add('modules');
-    ulModules.style.listStyleType = 'none';
-
-    for (const liModulesKey of element.modules) {
-        let liModules = document.createElement('li');
-        liModules.classList.add('modules__item');
-        liModules.innerText = liModulesKey;
-        liModules.style.borderLeft = '3px solid #544ab6';
-        liModules.style.borderBottom = '3px solid #544ab6';
-        liModules.style.maxWidth = '97%';
-        liModules.style.borderBottomLeftRadius = '10px';
-        liModules.style.paddingLeft = '5px';
-        liModules.style.marginBottom = '5px';
-        liModules.style.fontSize = '22px';
-
-
-        ulModules.appendChild(liModules);
-    }
-
-
-    mainContainer.appendChild(divInner);
-    divInner.appendChild(h1Title);
-    divInner.appendChild(monthHourBlock);
-    monthHourBlock.appendChild(h2MonthDur);
-    monthHourBlock.appendChild(h2HourDur);
-    divInner.appendChild(modulesContainer);
-    modulesContainer.appendChild(ulModules);
-}
+// let coursesArray = [
+//     {
+//         title: 'JavaScript Complex',
+//         monthDuration: 5,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+//     },
+//     {
+//         title: 'Java Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'java core',
+//             'java advanced']
+//     },
+//     {
+//         title: 'Python Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'python core',
+//             'python advanced']
+//     },
+//     {
+//         title: 'QA Complex',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+//     },
+//     {
+//         title: 'FullStack',
+//         monthDuration: 7,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'react',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'node.js',
+//             'python',
+//             'java']
+//     },
+//     {
+//         title: 'Frontend',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+//     }
+// ];
+//
+// let mainContainer = document.body.appendChild(document.createElement('div'));
+// mainContainer.classList.add('main__container');
+// mainContainer.style.maxWidth = '1800px';
+// mainContainer.style.margin = '0 auto';
+// mainContainer.style.borderRadius = '15px'
+// mainContainer.style.rowGap = '10px';
+// mainContainer.style.fontFamily = 'Arial';
+// mainContainer.style.backgroundColor = '#9d92f7'
+// mainContainer.style.boxShadow = '5px 5px 10px #333333';
+// mainContainer.style.color = '#ffffff';
+// for (const element of coursesArray) {
+//
+//     let divInner = document.createElement('div');
+//     divInner.style.padding = '5px';
+//
+//     let h1Title = document.createElement('h1');
+//     h1Title.innerText = element.title;
+//     h1Title.style.textAlign = 'center';
+//     h1Title.style.backgroundColor = '#544ab6';
+//     h1Title.style.borderRadius = '10px';
+//
+//     let monthHourBlock = document.createElement('div');
+//     monthHourBlock.classList.add('month__hour_block');
+//     monthHourBlock.style.display = 'flex';
+//     monthHourBlock.style.columnGap = '5px';
+//     monthHourBlock.style.backgroundColor = '#544ab6';
+//     monthHourBlock.style.borderRadius = '10px';
+//
+//     let h2MonthDur = document.createElement('h2');
+//     h2MonthDur.innerText = `Month duration: ${element.monthDuration}`;
+//     h2MonthDur.style.textAlign = 'center';
+//     h2MonthDur.style.flexBasis = '50%';
+//
+//     let h2HourDur = document.createElement('h2');
+//     h2HourDur.innerText = `Hours duration: ${element.hourDuration}`;
+//     h2HourDur.style.textAlign = 'center';
+//     h2HourDur.style.flexBasis = '50%';
+//
+//     let modulesContainer = document.createElement('div');
+//     modulesContainer.classList.add('modules__container');
+//
+//     let ulModules = document.createElement('ul');
+//     ulModules.classList.add('modules');
+//     ulModules.style.listStyleType = 'none';
+//
+//     for (const liModulesKey of element.modules) {
+//         let liModules = document.createElement('li');
+//         liModules.classList.add('modules__item');
+//         liModules.innerText = liModulesKey;
+//         liModules.style.borderLeft = '3px solid #544ab6';
+//         liModules.style.borderBottom = '3px solid #544ab6';
+//         liModules.style.maxWidth = '97%';
+//         liModules.style.borderBottomLeftRadius = '10px';
+//         liModules.style.paddingLeft = '5px';
+//         liModules.style.marginBottom = '5px';
+//         liModules.style.fontSize = '22px';
+//
+//
+//         ulModules.appendChild(liModules);
+//     }
+//
+//
+//     mainContainer.appendChild(divInner);
+//     divInner.appendChild(h1Title);
+//     divInner.appendChild(monthHourBlock);
+//     monthHourBlock.appendChild(h2MonthDur);
+//     monthHourBlock.appendChild(h2HourDur);
+//     divInner.appendChild(modulesContainer);
+//     modulesContainer.appendChild(ulModules);
+// }
