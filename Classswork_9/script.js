@@ -190,6 +190,7 @@ for (const element of coursesArray) {
         liModules.innerText = liModulesKey;
         liModules.style.borderLeft = '3px solid #544ab6';
         liModules.style.borderBottom = '3px solid #544ab6';
+        liModules.style.maxWidth = '97%';
         liModules.style.borderBottomLeftRadius = '10px';
         liModules.style.paddingLeft = '5px';
         liModules.style.marginBottom = '5px';
