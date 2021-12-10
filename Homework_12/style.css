@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8b8b8b;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/*----------------------------=== Task 1 ===------------------------------------*/
+
+/*.container {*/
+/*    margin: 5px 0;*/
+/*    padding: 5px;*/
+/*    background-color: #535353;*/
+/*    max-width: 1600px;*/
+/*    min-height: 100vh;*/
+/*    box-shadow: 0 10px 20px #232323;*/
+/*    color: #dfbf5d;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    flex-grow: 1;*/
+/*    row-gap: 5px;*/
+/*    column-gap: 5px;*/
+/*}*/
+
+/*.div__post {*/
+/*    padding: 10px;*/
+/*    background-color: #404040;*/
+/*    flex-grow: 1;*/
+/*    flex-basis: 18%;*/
+/*    transition: .3s;*/
+/*}*/
+
+/*.div__post:hover {*/
+/*    background-color: #232323;*/
+/*    transition: .5s;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*.user__id, .user__title, .user__body {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*----------------------------=== Task 1 ===------------------------------------*/
+
+
+/*----------------------------=== Task 2 ===------------------------------------*/
+
+/*.main {*/
+/*    margin: 10px 0;*/
+/*    padding: 10px;*/
+/*    background-color: #e0e0e0;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    row-gap: 10px;*/
+/*}*/
+
+/*.div__comment {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    row-gap: 5px;*/
+/*    padding: 10px 15px;*/
+/*    background-color: #e2f1ee;*/
+/*    box-shadow: 0 0 5px 2px #d6d6d6;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*.id__name_div {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    column-gap: 10px;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.comment__id {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background-color: #ffffff;*/
+/*    min-width: 60px;*/
+/*    min-height: 60px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.comment__name {*/
+/*    color: #3f7ed1;*/
+/*    cursor: pointer;*/
+/*    max-width: fit-content;*/
+/*}*/
+
+/*.comment__email {*/
+/*    color: #000000;*/
+/*    cursor: pointer;*/
+/*    max-width: fit-content;*/
+/*}*/
+
+/*.comment__email:hover {*/
+/*    color: rgba(0, 0, 0, 0.72);*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*.comment__body {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*----------------------------=== Task 2 ===------------------------------------*/
