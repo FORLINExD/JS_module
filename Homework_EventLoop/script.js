@@ -353,7 +353,7 @@ async function routine() {
         console.log(meWentSleep);
 
     } catch (e) {
-        console.info(e)
+        console.error(e)
     }
 }
 
