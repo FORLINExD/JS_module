@@ -11,49 +11,81 @@
 // І так далі
 
 
-// function schedule() {
-//     setTimeout(() => {
-//         console.log('1 - Прокинувся')
-//         setTimeout(() => {
-//             console.log('2 - Вмився')
-//             setTimeout(() => {
-//                 console.log('3 - Поснідав')
-//                 setTimeout(() => {
-//                     console.log('4 - Пішов на роботу')
-//                     setTimeout(() => {
-//                         console.log('5 - Попрацював')
-//                         setTimeout(() => {
-//                             console.log('6 - Пообідав')
-//                             setTimeout(() => {
-//                                 console.log('7 - Ще попрацював')
-//                                 setTimeout(() => {
-//                                     console.log('8 - Пішов додому')
-//                                     setTimeout(() => {
-//                                         console.log('9 - Повечеряв')
-//                                         setTimeout(() => {
-//                                             console.log('10 - Подивився фільм')
-//                                             setTimeout(() => {
-//                                                 console.log('11 - Підготувався до сну')
-//                                                 setTimeout(() => {
-//                                                     console.log('12 - Ліг спати')
-//                                                 }, 350)
-//                                             }, 600)
-//                                         }, 1200)
-//                                     }, 50)
-//                                 }, 200)
-//                             }, 2000)
-//                         }, 450)
-//                     }, 3000)
-//                 }, 1500)
-//             }, 500)
-//         }, 100)
-//     }, 300)
+//////////////////////////////////   Callback
 //
-// }
+// const wakeUp = (cb) => setTimeout(() => {
+//     cb('1 - Прокинувся');
+// }, 300);
+// const washed = (cb) => setTimeout(() => {
+//     cb('2 - Вмився');
+// }, 100);
+// const breakfast = (cb) => setTimeout(() => {
+//     cb('3 - Поснідав');
+// }, 500);
+// const goToWork = (cb) => setTimeout(() => {
+//     cb('4 - Пішов на роботу');
+// }, 1500);
+// const work = (cb) => setTimeout(() => {
+//     cb('5 - Попрацював');
+// }, 3000);
+// const lunch = (cb) => setTimeout(() => {
+//     cb('6 - Пообідав');
+// }, 450);
+// const moreWork = (cb) => setTimeout(() => {
+//     cb('7 - Ще попрацював');
+// }, 2000);
+// const goHome = (cb) => setTimeout(() => {
+//     cb('8 - Пішов додому');
+// }, 200);
+// const dinner = (cb) => setTimeout(() => {
+//     cb('9 - Повечеряв');
+// }, 50);
+// const watchMovie = (cb) => setTimeout(() => {
+//     cb('10 - Подивився фільм');
+// }, 1200);
+// const prepareToSleep = (cb) => setTimeout(() => {
+//     cb('11 - Підготувався до сну');
+// }, 600);
+// const wentSleep = (cb) => setTimeout(() => {
+//     cb('12 - Ліг спати');
+// }, 350);
 //
-// schedule();
-
-
+// wakeUp((msg) => {
+//     console.log(msg);
+//     washed((msg) => {
+//         console.log(msg);
+//         breakfast((msg) => {
+//             console.log(msg);
+//             goToWork((msg) => {
+//                 console.log(msg);
+//                 work((msg) => {
+//                     console.log(msg);
+//                     lunch((msg) => {
+//                         console.log(msg);
+//                         moreWork((msg) => {
+//                             console.log(msg);
+//                             goHome((msg) => {
+//                                 console.log(msg);
+//                                 dinner((msg) => {
+//                                     console.log(msg);
+//                                     watchMovie((msg) => {
+//                                         console.log(msg);
+//                                         prepareToSleep((msg) => {
+//                                             console.log(msg);
+//                                             wentSleep((msg) => {
+//                                                 console.log(msg);
+//                                             })
+//                                         })
+//                                     })
+//                                 })
+//                             })
+//                         })
+//                     })
+//                 })
+//             })
+//         })
+//     })
+// })
 
 
 //////////////////////////////////////////   Promise
@@ -193,121 +225,139 @@
 //     })
 
 
-
-
 /////////////////////////////////////  async await
 //
-// function wakeUp () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('1 - Прокинувся');
-//         }, 300)
-//     })
-// }
-// function washed () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('2 - Вмився');
-//         }, 100)
-//     })
-// }
-// function breakfast () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('3 - Поснідав');
-//         }, 500)
-//     })
-// }
-// function goToWork () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('4 - Пішов на роботу');
-//         }, 1500)
-//     })
-// }
-// function work () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('5 - Попрацював');
-//         }, 3000)
-//     })
-// }
-// function lunch () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('6 - Пообідав');
-//         }, 450)
-//     })
-// }
-// function moreWork () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('7 - Ще попрацював');
-//         }, 2000)
-//     })
-// }
-// function goHome () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('8 - Пішов додому');
-//         }, 200)
-//     })
-// }
-// function dinner () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('9 - Повечеряв');
-//         }, 50)
-//     })
-// }
-// function watchMovie () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('10 - Подивився фільм');
-//         }, 1200)
-//     })
-// }
-// function prepareToSleep () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('11 - Підготувався до сну');
-//         }, 600)
-//     })
-// }
-// function wentSleep () {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve('12 - Ліг спати');
-//         }, 350)
-//     })
-// }
-//
-// async function routine() {
-//     const meWakeup = await wakeUp();
-//     const meWashed = await washed();
-//     const meBreakfast = await breakfast();
-//     const meGoToWork = await goToWork();
-//     const meWork = await work();
-//     const meLunch = await lunch();
-//     const meMoreWork = await moreWork();
-//     const meGoHome = await goHome();
-//     const meDinner = await dinner();
-//     const meWatchMovie = await watchMovie();
-//     const mePrepareToSleep = await prepareToSleep();
-//     const meWentSleep = await wentSleep();
-//
-//     console.log(meWakeup);
-//     console.log(meWashed);
-//     console.log(meBreakfast);
-//     console.log(meGoToWork);
-//     console.log(meWork);
-//     console.log(meLunch);
-//     console.log(meMoreWork);
-//     console.log(meGoHome);
-//     console.log(meDinner);
-//     console.log(meWatchMovie);
-//     console.log(mePrepareToSleep);
-//     console.log(meWentSleep);
-// }
-// routine();
+function wakeUp() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('1 - Прокинувся');
+        }, 300)
+    })
+}
+
+function washed() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('2 - Вмився');
+        }, 100)
+    })
+}
+
+function breakfast() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('3 - Поснідав');
+        }, 500)
+    })
+}
+
+function goToWork() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('4 - Пішов на роботу');
+        }, 1500)
+    })
+}
+
+function work() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('5 - Попрацював');
+        }, 3000)
+    })
+}
+
+function lunch() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('6 - Пообідав');
+        }, 450)
+    })
+}
+
+function moreWork() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('7 - Ще попрацював');
+        }, 2000)
+    })
+}
+
+function goHome() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('8 - Пішов додому');
+        }, 200)
+    })
+}
+
+function dinner() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('9 - Повечеряв');
+        }, 50)
+    })
+}
+
+function watchMovie() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('10 - Подивився фільм');
+        }, 1200)
+    })
+}
+
+function prepareToSleep() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('11 - Підготувався до сну');
+        }, 600)
+    })
+}
+
+function wentSleep() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('12 - Ліг спати');
+        }, 350)
+    })
+}
+
+
+async function routine() {
+    try {
+        const meWakeup = await wakeUp();
+        const meWashed = await washed();
+        const meBreakfast = await breakfast();
+        const meGoToWork = await goToWork();
+        const meWork = await work();
+        const meLunch = await lunch();
+        const meMoreWork = await moreWork();
+        const meGoHome = await goHome();
+        const meDinner = await dinner();
+        const meWatchMovie = await watchMovie();
+        const mePrepareToSleep = await prepareToSleep();
+        const meWentSleep = await wentSleep();
+
+        console.log(meWakeup);
+        console.log(meWashed);
+        console.log(meBreakfast);
+        console.log(meGoToWork);
+        console.log(meWork);
+        console.log(meLunch);
+        console.log(meMoreWork);
+        console.log(meGoHome);
+        console.log(meDinner);
+        console.log(meWatchMovie);
+        console.log(mePrepareToSleep);
+        console.log(meWentSleep);
+
+    } catch (e) {
+        console.info(e)
+    }
+}
+
+routine();
+
+
 
