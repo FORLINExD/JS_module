@@ -326,31 +326,41 @@ function wentSleep() {
 
 async function routine() {
     try {
-        const meWakeup = await wakeUp();
-        const meWashed = await washed();
-        const meBreakfast = await breakfast();
-        const meGoToWork = await goToWork();
-        const meWork = await work();
-        const meLunch = await lunch();
-        const meMoreWork = await moreWork();
-        const meGoHome = await goHome();
-        const meDinner = await dinner();
-        const meWatchMovie = await watchMovie();
-        const mePrepareToSleep = await prepareToSleep();
-        const meWentSleep = await wentSleep();
+        let res = await wakeUp();
+        console.log(res);
 
-        console.log(meWakeup);
-        console.log(meWashed);
-        console.log(meBreakfast);
-        console.log(meGoToWork);
-        console.log(meWork);
-        console.log(meLunch);
-        console.log(meMoreWork);
-        console.log(meGoHome);
-        console.log(meDinner);
-        console.log(meWatchMovie);
-        console.log(mePrepareToSleep);
-        console.log(meWentSleep);
+        res = await washed();
+        console.log(res);
+
+        res = await breakfast();
+        console.log(res);
+
+        res = await goToWork();
+        console.log(res);
+
+        res = await work();
+        console.log(res);
+
+        res = await lunch();
+        console.log(res);
+
+        res = await moreWork();
+        console.log(res);
+
+        res = await goHome();
+        console.log(res);
+
+        res = await dinner();
+        console.log(res);
+
+        res = await watchMovie();
+        console.log(res);
+
+        res = await prepareToSleep();
+        console.log(res);
+
+        res = await wentSleep();
+        console.log(res);
 
     } catch (e) {
         console.error(e)
