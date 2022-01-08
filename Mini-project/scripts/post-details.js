@@ -8,7 +8,7 @@ const idTitleDiv = document.createElement('div');
 idTitleDiv.classList.add('id__title_div');
 
 const postId = document.createElement('h3');
-postId.innerHTML = `Id: ${userPost.id}`;
+postId.innerHTML = `ID: ${userPost.id}`;
 
 const postTitle = document.createElement('h3');
 postTitle.innerHTML = `Title: ${userPost.title}`;
